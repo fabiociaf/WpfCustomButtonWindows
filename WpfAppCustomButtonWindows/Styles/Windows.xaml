@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+                    xmlns:local="clr-namespace:WpfAppCustomButtonWindows">
+
+    <Style x:Key="MeuMetroWindow" TargetType="{x:Type mah:MetroWindow}">
+        <Setter Property="NonActiveWindowTitleBrush" Value="{DynamicResource BlueBrush}" />
+        <Setter Property="TitleAlignment" Value="Center" />
+        <Setter Property="TitleForeground" Value="{DynamicResource WhiteBrush}"/>
+        <Setter Property="Background"  Value="{StaticResource WhiteBrush}"/>
+        <Setter Property="BorderBrush"  Value="{DynamicResource BlueBrush}" />
+        <Setter Property="WindowTitleBrush" Value="{DynamicResource BlueBrush}" />
+        <Setter Property="Foreground"  Value="{DynamicResource WhiteBrush}" />
+    </Style>
+
+</ResourceDictionary>

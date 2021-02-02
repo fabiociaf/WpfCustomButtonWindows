@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"    
+                    xmlns:local="clr-namespace:WpfAppCustomButtonWindows">
+    
+    <Color x:Key="BlueColor">#0B2C52</Color>
+    <Color x:Key="WhiteColor">#FFFFFF</Color>
+
+    <SolidColorBrush x:Key="BlueBrush" Color="{StaticResource BlueColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+
+</ResourceDictionary>
