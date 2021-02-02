@@ -3,7 +3,7 @@
                      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
                     xmlns:local="clr-namespace:WpfAppCustomButtonWindows">
 
-    <Style x:Key="MeuMetroWindow" TargetType="{x:Type mah:MetroWindow}">
+    <Style x:Key="MeuMetroWindow" TargetType="{x:Type mah:MetroWindow}" BasedOn="{StaticResource {x:Type mah:MetroWindow}}">
         <Setter Property="NonActiveWindowTitleBrush" Value="{DynamicResource BlueBrush}" />
         <Setter Property="TitleAlignment" Value="Center" />
         <Setter Property="TitleForeground" Value="{DynamicResource WhiteBrush}"/>
