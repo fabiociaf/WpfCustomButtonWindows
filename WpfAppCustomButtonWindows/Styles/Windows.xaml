@@ -13,4 +13,15 @@
         <Setter Property="Foreground"  Value="{DynamicResource WhiteBrush}" />
     </Style>
 
+    <Style x:Key="MeuMetroWindow2" TargetType="{x:Type mah:MetroWindow}" BasedOn="{StaticResource {x:Type mah:MetroWindow}}">
+        <Setter Property="NonActiveWindowTitleBrush" Value="{DynamicResource BlueBrush}" />
+        <Setter Property="TitleAlignment" Value="Center" />
+        <Setter Property="TitleForeground" Value="{DynamicResource BlueBrush}" />
+        <Setter Property="Background"  Value="{StaticResource WhiteBrush}"/>
+        <Setter Property="BorderBrush"  Value="{DynamicResource BlueBrush}" />
+        <Setter Property="WindowTitleBrush" Value="{StaticResource WhiteBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource BlueBrush}" />
+    </Style>
+
+
 </ResourceDictionary>

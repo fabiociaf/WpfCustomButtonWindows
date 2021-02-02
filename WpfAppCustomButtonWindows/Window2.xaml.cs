@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,26 +11,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfAppCustomButtonWindows
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica interna para Window2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window2 : MetroWindow
     {
-        public MainWindow()
+        public Window2()
         {
             InitializeComponent();
-
-            Window1 windows = new Window1();
-            windows.Show();
-
-            Window2 windows2 = new Window2();
-            windows2.Show();
-            this.Hide();
         }
     }
 }
