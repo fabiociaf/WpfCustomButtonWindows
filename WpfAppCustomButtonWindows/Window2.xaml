@@ -1,15 +1,31 @@
-﻿<mah:MetroWindow 
-        x:Class="WpfAppCustomButtonWindows.Window2"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfAppCustomButtonWindows"
-        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"  
-        Style="{StaticResource MeuMetroWindow2}"       
-        mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
-    </mah:MetroWindow> 
+﻿<mah:MetroWindow x:Class="WpfAppCustomButtonWindows.Window2"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:local="clr-namespace:WpfAppCustomButtonWindows"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:sys="clr-namespace:System;assembly=netstandard"
+                 Title="Window2"
+                 Width="800"
+                 Height="450"
+                 Style="{StaticResource MeuMetroWindow2}"
+                 mc:Ignorable="d">
+    <StackPanel>
+        <mah:MetroHeader Header="Accent Color">
+            <mah:ColorPicker x:Name="CpAccent"
+                             DropDownClosed="ColorPicker_DropDownClosed"
+                             SelectedColor="Blue" />
+        </mah:MetroHeader>
+
+        <mah:MetroHeader Header="Theme">
+            <ComboBox x:Name="CmbBaseTheme"
+                      SelectedItem="Light"
+                      SelectionChanged="ComboBox_SelectionChanged">
+                <sys:String>Light</sys:String>
+                <sys:String>Dark</sys:String>
+            </ComboBox>
+        </mah:MetroHeader>
+
+    </StackPanel>
+</mah:MetroWindow>
