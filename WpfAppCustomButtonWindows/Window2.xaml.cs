@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.Controls;
+﻿using ControlzEx.Theming;
+using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,33 @@ namespace WpfAppCustomButtonWindows
         public Window2()
         {
             InitializeComponent();
+        }
+
+        private void ColorPicker_DropDownClosed(object sender, EventArgs e)
+        {
+            SetTheme();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            SetTheme();
+        }
+
+        private void SetTheme()
+        {
+            if (CpAccent.SelectedColor is Color accent)
+            {
+                var theme = new Theme("MyTheme",
+                                      "MyTheme",
+                                      CmbBaseTheme.SelectedItem as string ?? "Light",
+                                      "Custom",
+                                      accent,
+                                      new SolidColorBrush(accent),
+                                      true,
+                                      false);
+
+                ThemeManager.Current.ChangeTheme(App.Current, theme);
+            }
         }
     }
 }
